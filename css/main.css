@@ -37,14 +37,31 @@ header h1 a img {
   border-radius: 50%;
   border: 1px solid #000;
   background-color: rgba(33,33,33, 0.5);
-  box-sizing: border-box;  
+  /* box-sizing: border-box;   */
   
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   
   
 }
+/* TODO circle 안에 있는 글자를 밖으로 빠져나오게 처리하고 싶어 */
 .circle__text  {
+
+  width:600px;
   line-height: 1.5;
+  text-align: center;
+}
+.circle__text h2 {
+  
+}
+
+.side-bar {
+  width: 80px;
+  height: 400px;
+  background-color: darkcyan;
+  position: fixed;
+  right:0;
+  bottom: 100px;
 }
