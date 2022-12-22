@@ -5,6 +5,8 @@ body {
   /* rem용 font */
   font-size: 10px;
   font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  
 }
 h2 {
   font-size: 3rem;
@@ -21,11 +23,66 @@ a {
 }
 
 
-header {}
-header h1 a {}
+header {
+  /* 헤더 정도는 고정높이 줘도 괜찮다 ,,섹션은 자식 크기에 맞게 하기*/
+  /* TODO 헤더 높이에 따른 로고 높이 변경 물어보기???? */
+  height: 100px;
+  background-color: #dedede;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 0 40px;
+}
 header h1 a img {
   width: 180px;
 }
+
+.main-menu {
+  display: flex;
+  
+    
+}
+.main-menu > li {
+  position: relative;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-menu > li + li {
+  margin-left: 24px;
+} 
+.main-menu > li > a {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.01rem;
+}
+
+.sub-menu {
+  position: absolute;
+  border: 1px solid #000;
+  top: 62px;
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+}
+.sub-menu > li {
+  padding: 8px 12px ;
+}
+.sub-menu > li > a {
+  padding: 0 20px;
+  background-color: yellow;
+  font-size: 1.2rem;
+}
+
+/* 탑메뉴 */
+.top-menu {
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+.top-menu 
+
 
 .main-visual__bgi {
   /* background-color: #ffdddd; */
