@@ -21,40 +21,64 @@
     </h1>
     <!-- 메인메뉴 -->
     <nav id="gnb">
-      <ul>
+      <ul class="main-menu">
         <li>
           <a href="javascript.void(0)">
               BRAND
           </a>
-          
+          <ul class="sub-menu">
+            <li>브랜드 스토리</li>
+            <li>멤버쉽</li>
+          </ul>          
         </li>
         <li>
           <a href="javascript.void(0)">
             PRODUCT
           </a>
+          <ul class="sub-menu">
+            <li>베스트 상품</li>
+            <li>전체 상품</li>
+            <li>페이스</li>
+            <li>립</li>
+            <li>아이</li>
+            <li>멀티</li>
+            <li>클렌징</li>
+            <li>세트</li>
+            <li>도구</li>
+          </ul>
         </li>
         <li>
           <a href="javascript.void(0)">
             STORE
           </a>
+          <ul class="sub-menu">
+            <li>도산 플래그쉽 스토어</li>
+            <li>Dahlia branch store</li>
+          </ul>
         </li>
       </ul>
     </nav>
     <!-- 탑메뉴 -->
     <div class="lnb">
-      <ul>
+      <ul class="top-menu">
+        <li>
+          <!-- 서치박스 -->
+          <input type="text">
+          <span></span>
+        </li>
         <li><a href="#">LOGIN</a></li>
         <li><a href="#">JOIN</a></li>
         <li><a href="#">장바구니</a></li>
         <li><a href="#">배송</a></li>
         <li><a href="#">찜목록</a></li>
-        <li><a href="#">언어</a></li>
+        <li><a href="#">language</a></li>
       </ul>
     </div>
   </header>
   <!-- 메인배너 or 유튜브 -->
-  <div class="mainVisual">
-    <div class="mainVisual__bgi">      
+  <!-- class명 네이밍은 대쉬 -->
+  <div class="main-visual">
+    <div class="main-visual__bgi">      
         <div class="circle">
           <div class="circle__text">
             <h2>Let Your Timeless Beauty bloom!</h2>
@@ -67,34 +91,53 @@
   <aside class="side-bar">
 
   </aside>
+  <!-- scroll 버튼 -->
+  <div class="scroll-btn">
+
+  </div>
   <main>
     <!-- Content1 : Dahlia's Pick -->
-    <section class="dahliaPick">
+    <section class="dahlia-pick">
       <div class="inner">
         <h2>Dahlia's Pick</h2>
-        <div class="dalhiaPick__menu">
-          <ul class="menu_bestProduct">
-            <h5>Best Product</h5>
+        <div class="dalhia-pick__menu">
+          <ul class="menu__best-product">
+            <h3>Best Product</h3>
             <li></li>
             <li></li>
             <li></li>
             <li></li>
           </ul>
-          <div class="menu__newProduct"></div>
+          <div class="menu__new-product">
+            <h3>New Product</h3>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </div>
         </div>
       </div>
     </section>
-    <section class="newEddition">
+    <section class="new-eddition">
       <div class="inner">
-        <div id="player">
-
+        <div id="new-eddtion__player">
+          <!-- 유튜브영역 -->
+        </div>
+        <div class="new-eddition__promotion">
+          <ul class="promotion__product">
+            <li></li>  
+            <li></li>  
+            <li></li>  
+          </ul>
         </div>
       </div>
     </section>
-    <section class="makeupGuide"></section>
-    <section class="eventBanner"></section>
+    <section class="makeup-guide"></section>
+    <section class="eventB-banner"></section>
   </main>
-  <footer></footer>
+  <footer>
+    <a href="#">logo</a>
+  </footer>
   </div>  
 </body>
 </html>

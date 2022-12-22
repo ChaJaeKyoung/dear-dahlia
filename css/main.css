@@ -1,9 +1,10 @@
 * {
-  box-sizing: border-box;
-  font-family: 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;  
 }
 body {
+  /* rem용 font */
   font-size: 10px;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 h2 {
   font-size: 3rem;
@@ -26,7 +27,7 @@ header h1 a img {
   width: 180px;
 }
 
-.mainVisual__bgi {
+.main-visual__bgi {
   /* background-color: #ffdddd; */
   background-image: url(../images/main_visual_img2.png);
   width: 100%;
@@ -38,7 +39,7 @@ header h1 a img {
   background-position: 0 0;
   background-size: cover;
 }
-.mainVisual__bgi .circle {
+.main-visual__bgi .circle {
   width: 500px;
   height: 500px;
   border-radius: 50%;
