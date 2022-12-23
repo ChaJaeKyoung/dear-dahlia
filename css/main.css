@@ -6,6 +6,7 @@ html {
   font-size: 10px;
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 400;
+  /* :root {} 와 html이랑 같음 */
 }
 
 /* body {
@@ -36,7 +37,7 @@ header {
   height: 100px;
   background-color: #dedede;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   padding: 0 40px;
 }
@@ -55,12 +56,13 @@ header h1 a img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 9;
 }
 .main-menu > li + li {
   margin-left: 24px;
 } 
 .main-menu > li > a {
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   font-weight: 700;
   letter-spacing: -0.01rem;
 }
@@ -79,25 +81,31 @@ header h1 a img {
 .sub-menu > li > a {
   padding: 0 20px;
   background-color: yellow;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 300;
 }
 
 /* 탑메뉴 */
 .top-menu {
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 200;
 }
 .top-menu .search {
 
 }
 .top-menu .login, .top-menu .join {
-  font-size: 1rem;
-  padding: 0 5px;
+  display: block;
+  background-color: #fff;
+  width: 80px;
+  font-size: 1.6rem;
   border: 1px solid #000;
-  border-radius: 5px;
+  border-radius: 2px;
   text-align: center;
-  vertical-align: middle;
+  padding: 6px 6px;
+}
+.top-menu > li {
+  margin-left : 10px;
 }
 
 
@@ -110,21 +118,33 @@ header h1 a img {
   justify-content: center;
   align-items:center;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center;
   background-size: cover;
 }
 .main-visual__bgi .circle {
-  width: 500px;
-  height: 500px;
+  width: 410px;
+  height: 410px;
   border-radius: 50%;
-  border: 1px solid #000;
-  background-color: rgba(33,33,33, 0.5);
+  /* border: 1px solid #000;  */
+  background-color: rgba(253, 232, 231, 0.71);  
   /* box-sizing: border-box;   */
   
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 0;
   
+}
+.circle::before {
+  content: "";
+  display: block;
+  width: 500px;
+  height: 500px;
+  background-color:rgba(255,255,255,0.3);
+  position: absolute;
+  border-radius: 50%;
+  z-index:-1;
   
 }
 /* TODO circle 안에 있는 글자를 밖으로 빠져나오게 처리하고 싶어 
@@ -132,14 +152,23 @@ header h1 a img {
 */
 .circle__text  {
 
-  width:800px;
-  line-height: 1.5;
+  width: 800px;
+  line-height: 8rem;
   text-align: center;
   flex-shrink: 0;
   
 }
+.circle__text strong {
+  font-size: 2rem;
+} 
 .circle__text h2 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+.circle__text em {
   
+  font-size: 3rem;
+  font-weight: 400;
 }
 
 .side-bar {
