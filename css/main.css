@@ -171,11 +171,69 @@ header h1 a img {
   font-weight: 400;
 }
 
+/* 사이드 메뉴바 */
 .side-bar {
-  width: 80px;
-  height: 400px;
+  width: 74px;
+  /* height: 512px; */
   background-color: darkcyan;
   position: fixed;
   right:0;
   bottom: 100px;
 }
+.side-bar .events {
+  height: 100px;
+  background-color: #dcdcdc;
+  text-align: center;
+  line-height: 100px;
+  
+}
+.events a {
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+.side-bar .latest-items {
+  height: 180px;
+  background-color: #c8c8c8;
+}
+.latest-items > h2 {
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 12px 0;
+}
+.latest-items p {
+  padding: 8px 0;
+  font-size: 1.6rem;
+  text-align: center;
+  color: pink;
+  font-weight: 500;
+}
+.item__btn {
+  display: flex;
+  
+}
+
+.item__btn .btn__prev, .item__btn .btn__next {
+  /* border: none; */
+  background: #fff;
+  cursor: pointer;
+  
+}
+/* TODO 22.12.23 수직정렬 여쭤보기 */
+.side-bar .qna {
+  height: 100px;
+  background-color: #e9e9e9;
+}
+.side-bar .qna .material-symbols-outlined {
+  font-size: 40px;
+}
+.side-bar .scroll-btn {
+  height: 60px;
+  background-color: pink;
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+}
+/* .side-bar .scroll-btn .material-symbols-outlined {
+  font-size: 40px;
+  
+} */
