@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dear-Dahlia</title>
   <!-- 구글웹폰트 Noto Sans KR -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <!-- style reset -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="stylesheet" href="./css/main.css">
@@ -23,61 +25,72 @@
     <nav id="gnb">
       <ul class="main-menu">
         <li>
-          <a href="javascript.void(0)">
+          <a href="javascript:void(0)">
               BRAND
           </a>
           <ul class="sub-menu">
-            <li><a href="#">브랜드 스토리</a></li>
-            <li><a href="#">멤버쉽</a></li>
+            <li><a href="javascript:void(0)">브랜드 스토리</a></li>
+            <li><a href="javascript:void(0)">멤버쉽</a></li>
           </ul>          
         </li>
         <li>
-          <a href="javascript.void(0)">
+          <a href="javascript:void(0)">
             PRODUCT
           </a>
           <ul class="sub-menu">
-            <li><a href="#">베스트 상품</a></li>
-            <li><a href="#">전체 상품</a></li>
-            <li><a href="#">페이스</a></li>
-            <li><a href="#">립</a></li>
-            <li><a href="#">아이</a></li>
-            <li><a href="#">멀티</a></li>
-            <li><a href="#">클렌징</a></li>
-            <li><a href="#">세트</a></li>
-            <li><a href="#">도구</a></li>
+            <li><a href="javascript:void(0)">베스트 상품</a></li>
+            <li><a href="javascript:void(0)">전체 상품</a></li>
+            <li><a href="javascript:void(0)">페이스</a></li>
+            <li><a href="javascript:void(0)">립</a></li>
+            <li><a href="javascript:void(0)">아이</a></li>
+            <li><a href="javascript:void(0)">멀티</a></li>
+            <li><a href="javascript:void(0)">클렌징</a></li>
+            <li><a href="javascript:void(0)">세트</a></li>
+            <li><a href="javascript:void(0)">도구</a></li>
           </ul>
         </li>
         <li>
-          <a href="javascript.void(0)">
+          <a href="javascript:void(0)">
             STORE
           </a>
           <ul class="sub-menu">
-            <li><a href="#">도산 플래그쉽 스토어</a></li>            
-            <li><a href="#">Dahlia branch store</a></li>
+            <li><a href="javascript:void(0)">도산 플래그쉽 스토어</a></li>            
+            <li><a href="javascript:void(0)">Dahlia branch store</a></li>
           </ul>
         </li>
       </ul>
     </nav>
     <!-- 탑메뉴 -->
-    <div class="lnb">
+    <nav class="lnb">
       <ul class="top-menu">
         <li>
           <!-- 서치박스 -->
-          <input type="text">
-          <span></span>
+          <div class="search">
+            <input type="text">
+            <span>아이콘</span>
+          </div>
         </li>
-        <li><a href="#">LOGIN</a></li>
-        <li><a href="#">JOIN</a></li>
-        <li><a href="#">장바구니</a></li>
-        <li><a href="#">배송</a></li>
-        <li><a href="#">찜목록</a></li>
-        <li><a href="#">language</a></li>
+        <li>
+          <a href="javascript:void(0)" class="login">
+            LOGIN
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)" class="join">
+            JOIN
+          </a>
+        </li>
+        <li><a href="javascript:void(0)">장바구니</a></li>
+        <li><a href="javascript:void(0)">배송</a></li>
+        <li><a href="javascript:void(0)">찜목록</a></li>
+        <li><a href="javascript:void(0)">language</a></li>
       </ul>
-    </div>
+    </nav>
   </header>
+
   <!-- 메인배너 or 유튜브 -->
-  <!-- class명 네이밍은 대쉬 -->
-  <div class="main-visual">
+  <!-- class명 네이밍은 대쉬나 유튜브 -->
+  <section class="main-visual">
     <div class="main-visual__bgi">      
         <div class="circle">
           <div class="circle__text">
@@ -86,19 +99,22 @@
           </div>
         </div>    
     </div>
-  </div>
+  </section>
+
   <!-- 사이드 메뉴바 -->
   <aside class="side-bar">
 
   </aside>
+
   <!-- scroll 버튼 -->
   <div class="scroll-btn">
 
   </div>
+
   <main>
     <!-- Content1 : Dahlia's Pick -->
     <section class="dahlia-pick">
-      
+
       <div class="inner">
         <h2>Dahlia's Pick</h2>
         <div class="dalhia-pick__menu">
@@ -119,6 +135,7 @@
         </div>
       </div>
     </section>
+
     <section class="new-eddition">
       <div class="inner">
         <div id="new-eddtion__player">
@@ -133,12 +150,14 @@
         </div>
       </div>
     </section>
+
     <section class="makeup-guide"></section>
-    <section class="eventB-banner"></section>
+    
+    <section class="event-banner"></section>
   </main>
+
   <footer>
-    <a href="#">logo</a>
-  </footer>
-  </div>  
+    <a href="javascript:void(0)">logo</a>
+  </footer>    
 </body>
 </html>

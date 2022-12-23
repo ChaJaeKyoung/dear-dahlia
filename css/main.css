@@ -1,13 +1,20 @@
 * {
   box-sizing: border-box;  
 }
-body {
+html {
   /* rem용 font */
   font-size: 10px;
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 400;
-  
 }
+
+/* body {
+  body 에 폰트를 주려면 
+  em단위를 사용해야됨 
+  em단위는 부모의 사이즈를 상속받는 것,,,
+  폰트사이즈의 디폴트 값은 16px
+} */
+
 h2 {
   font-size: 3rem;
   font-weight: 700;
@@ -17,7 +24,7 @@ a {
   color: #333;
 }
 .inner {
-  width: 1400px;
+  max-width: 1400px;
   margin: 0 auto;
   position: relative;
 }
@@ -81,7 +88,17 @@ header h1 a img {
   font-size: 1.2rem;
   font-weight: 200;
 }
-.top-menu 
+.top-menu .search {
+
+}
+.top-menu .login, .top-menu .join {
+  font-size: 1rem;
+  padding: 0 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
 
 
 .main-visual__bgi {
