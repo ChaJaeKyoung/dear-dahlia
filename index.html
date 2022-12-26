@@ -91,7 +91,7 @@
   </header>
 
   <!-- 메인배너 or 유튜브 -->
-  <!-- class명 네이밍은 대쉬나 유튜브 -->
+  <!-- class명 네이밍은 대쉬나 언더바로 구분 -->
   <section class="main-visual">
     <div class="main-visual__bgi">      
         <div class="circle">
@@ -152,40 +152,66 @@
     <!-- Content1 : Dahlia's Pick -->
     <section class="dahlia-pick">
       <div class="dahlia-pick__bg-wrap">
-        <img src="./images/dahlia-pick-bg-el.png" alt="달리아꽃">
-        <img src="./images/dahlia-pick-bg-el.png" alt="달리아꽃">
+        <img class="bg-wrap__img1" src="./images/dahlia-pick-bg-el.png" alt="달리아꽃1">
+        <img class="bg-wrap__img2" src="./images/dahlia-pick-bg-el.png" alt="달리아꽃2">
         <div class="inner">
           <h2>Dahlia's Pick</h2>
-            <ul class="menu__best-product">
+            <div class="dahlia-pick__titles">
+              <h3 class="active">Best Product</h3> 
+              <h3 class="pick-2">New Product</h3>
+            </div>
+            <div class="dahlia-pick__mobile-h3">
               <h3>Best Product</h3>
-              <li>
-                <a href="javascript:void(0)">
-                  <img src="./images/dahlia-pick-best-img1.png" alt="베스트상품1">
-                </a>
-              </li>            
-              <li>
-                <a href="javascript:void(0)">
-                  <img src="./images/dahlia-pick-best-img2.png" alt="베스트상품2">
-                </a>
-              </li>            
-              <li>
-                <a href="javascript:void(0)">
-                  <img src="./images/dahlia-pick-best-img3.png" alt="베스트상품3">
-                </a>
-              </li>            
-              <li>
-                <a href="javascript:void(0)">
-                  <img src="./images/dahlia-pick-best-img4.png" alt="베스트상품4">
-                </a>
-              </li>           
-            </ul>
-            <ul class="menu__new-product">
-              <h3>New Product</h3>
-              <li><a href="javascript:void(0)"></a></li>            
-              <li><a href="javascript:void(0)"></a></li>            
-              <li><a href="javascript:void(0)"></a></li>            
-              <li><a href="javascript:void(0)"></a></li>
-            </ul>
+            </div>  
+            <div class="dahlia-pick__contents">
+              <ul class="contents__best-product active">
+                <li>
+                  <a href="javascript:void(0)">
+                    <img src="./images/dahlia-pick-best-img1.png" alt="베스트상품1">
+                  </a>
+                </li>            
+                <li>
+                  <a href="javascript:void(0)">
+                    <img src="./images/dahlia-pick-best-img2.png" alt="베스트상품2">
+                  </a>
+                </li>            
+                <li>
+                  <a href="javascript:void(0)">
+                    <img src="./images/dahlia-pick-best-img3.png" alt="베스트상품3">
+                  </a>
+                </li>            
+                <li>
+                  <a href="javascript:void(0)">
+                    <img src="./images/dahlia-pick-best-img4.png" alt="베스트상품4">
+                  </a>
+                </li>           
+              </ul>       
+              <div class="dahlia-pick__mobile-h3">
+                <h3>New Product</h3>
+              </div>     
+              <ul class="contents__new-product pick-2">
+                <li>
+                  <a href="javascript:void(0)">
+                    <img src="./images/dahlia-pick-best-img2.png" alt="베스트상품2">
+                  </a>
+                </li>            
+                <li>
+                  <a href="javascript:void(0)">
+                    <img src="./images/dahlia-pick-best-img2.png" alt="베스트상품2">
+                  </a>
+                </li>            
+                <li>
+                  <a href="javascript:void(0)">
+                    <img src="./images/dahlia-pick-best-img2.png" alt="베스트상품2">
+                  </a>
+                </li>            
+                <li>
+                  <a href="javascript:void(0)">
+                    <img src="./images/dahlia-pick-best-img2.png" alt="베스트상품2">
+                  </a>
+                </li>
+              </ul>
+            </div>
         </div>
       </div>
     </section>
