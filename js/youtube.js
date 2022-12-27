@@ -9,8 +9,8 @@ var tag = document.createElement('script');
       // var player;
       function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-          height: '602',
-          width: '1070',
+          height: '484',
+          width: '860',
           videoId: 'b8Si68tcpCA', // 최초 재생할 유튜브 영상 ID
           playerVars: { // 자세한 옵션은 플레이어 매개변수 메뉴 확인
             autoplay: true, // 자동 재생 유무

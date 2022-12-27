@@ -351,13 +351,13 @@ header h1 a img {
   text-align: center;
 }
 .new-eddition__youtube {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
-  padding: 100px;
+  padding-top: 100px;
 }
 .youtube__frame {
   overflow: hidden;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   background-color: #fff;
   padding: 40px;
   margin: 0 auto;
@@ -365,25 +365,54 @@ header h1 a img {
 #player {
 }
 /* 새 시즌 프로모션 상품 영역 */
+.new-eddition {
+
+}
 .sale-img {
   width: 160px;
+}
+.new-eddition__promotion {
+  border: 1px solid #000;
 }
 .promotion__product {
   display: flex;
   justify-content: center;
   column-gap: 80px;  
+  z-index: 5;
+  position: relative;
+  left:0;
+  top:140px;
+  border: 1px solid red;
 }
-.promotion__product li img {
-  box-shadow: rgba(0,0,0,.7);
+.promotion__product li a {
+  position: relative;
+  display: block;
+}
+.promotion__product li a::before {
+  content:"";
+  display: block;
+  width: 120px;
+  height: 70px;
+  background-image: url(../images/new-promotion-sale-img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: -36px;
+  top: -1px;
+}
+.promotion__product li a img {
+  display:block;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
 }
 .new__text-wrap {
   width: 100%;
   overflow: hidden;
   text-align: center;
   position: relative;
-  bottom: 130px;
+  bottom: -22px;
   left:0 ;
-  z-index: 0;
+  z-index: 2;
 }
 .new__text-wrap span {
   font-size: 1.8rem;
@@ -392,6 +421,10 @@ header h1 a img {
 }
 .btn-promotion  {
   width: 100%;
+  background-color: #fff;
+  padding-top: 300px;
+  position: relative;
+  z-index: 1;
 }
 .btn-promotion a {
   border: 1px solid #a46868;
@@ -404,6 +437,7 @@ header h1 a img {
   color: #a46868;
   padding: 10px;
   margin: 0 auto;
+  
 }
 .btn-promotion a:hover {
   background-color: #a46868;
