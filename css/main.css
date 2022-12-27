@@ -349,5 +349,18 @@ header h1 a img {
 .new-eddition h2 {
   padding-top: 120px;
   text-align: center;
-  
+}
+.new-eddition__youtube {
+  border: 1px solid red;
+  display: flex;
+  padding: 100px;
+}
+.youtube__frame {
+  overflow: hidden;
+  border: 1px solid #000;
+  background-color: #fff;
+  padding: 40px;
+  margin: 0 auto;
+}
+#player {
 }
