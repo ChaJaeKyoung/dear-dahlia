@@ -257,11 +257,11 @@ header h1 a img {
 .bg-wrap__img2 {  
 /* img요소의 가로길이 */
   position: absolute;
-  bottom: 0px;
+  bottom: 20px;
   left: calc(var(--image-width)/-2);  
 }
 .dahlia-pick h2 {
-  padding-top: 120px;
+  padding-top: 140px;
   text-align: center;
 }
 .dahlia-pick__titles {
@@ -290,7 +290,7 @@ header h1 a img {
   background-color: #f8dcd9;
 }
 .dahlia-pick__contents {
-  padding-bottom: 120px;
+  padding-bottom: 140px;
 }
 .dahlia-pick__contents > ul > li {
   position: relative;
@@ -299,15 +299,17 @@ header h1 a img {
 .dahlia-pick__contents > ul > li > a::before {
   font-size: 1.6rem;
   text-align: center;
-  line-height: 25%;
   color: #f5a299;
   display: block;
   width: 25%;
-  height: 25%;
+  height: 23%;
   background-color: rgba(255, 255, 255, 0.8);
   position: absolute;
   top: 0;
   left: 0;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 .dahlia-pick__contents > ul.contents__best-product li a::before {
   content: "BEST";
@@ -323,13 +325,29 @@ header h1 a img {
   display: flex;
 }
 .dahlia-pick__contents ul li {
-  width: 25%
+  width: 25%;
+  /* height: 30vw; */
 }
-.dahlia-pick__contents ul li a {
+.dahlia-pick__contents > ul > li > a {
+  display:block;
   background-color: yellow;
-}
-.dahlia-pick__contents > ul li img {
-  display: block;
   width: 100%;
   height: 100%;
+}
+.dahlia-pick__contents > ul li a img {
+  display: block;
+  width: 100%;
+  height: 100%; 
+  /* 높이가 다른건 컨텐츠를 잘 맞춰야 함! => img크기를 잘 맞춰서 하던지,,아니면 사이즈 고정해놓고 미디어 쿼리로 조정을 하던지 하자 */
+  /* img도 cover을 쓸 수 있다. object-fit: cover; */
+}
+
+/* 유튜브영역 */
+.new-eddition {
+  background-color: #fcecea;
+}
+.new-eddition h2 {
+  padding-top: 120px;
+  text-align: center;
+  
 }

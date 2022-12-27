@@ -12,7 +12,7 @@ pickTabEls.forEach(function(pickTabEl, index) {
     pickTabEls.forEach(function (pickTabEl) {
       pickTabEl.classList.remove('active');
     });
-    // TODO 전체 지우기 Q.22-12-27혹시 숫자 전체를 선택하는 연산자 * 같은거나 배열의 길이를 콜백하는 방법은?
+    // TODO 전체 지우기 Q.22-12-27혹시 숫자 전체를 선택하는 연산자 * 같은 것이 있을까?
     for (n=1;n<=2;n++){
     document.querySelectorAll('.pick-'+ n).forEach(function(pickEl) {
       pickEl.classList.remove('active');      
