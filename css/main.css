@@ -342,7 +342,7 @@ header h1 a img {
   /* img도 cover을 쓸 수 있다. object-fit: cover; */
 }
 
-/* 유튜브영역 */
+/* 유튜브 영역 */
 .new-eddition {
   background-color: #fcecea;
 }
@@ -363,4 +363,49 @@ header h1 a img {
   margin: 0 auto;
 }
 #player {
+}
+/* 새 시즌 프로모션 상품 영역 */
+.sale-img {
+  width: 160px;
+}
+.promotion__product {
+  display: flex;
+  justify-content: center;
+  column-gap: 80px;  
+}
+.promotion__product li img {
+  box-shadow: rgba(0,0,0,.7);
+}
+.new__text-wrap {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  bottom: 130px;
+  left:0 ;
+  z-index: 0;
+}
+.new__text-wrap span {
+  font-size: 1.8rem;
+  color: #a46868;
+  white-space: nowrap;
+}
+.btn-promotion  {
+  width: 100%;
+}
+.btn-promotion a {
+  border: 1px solid #a46868;
+  width:188px;
+  height:55px;
+  text-align: center;  
+  display: block;
+  font-size: 3rem;
+  font-weight: 200;
+  color: #a46868;
+  padding: 10px;
+  margin: 0 auto;
+}
+.btn-promotion a:hover {
+  background-color: #a46868;
+  color: #fff;
 }
