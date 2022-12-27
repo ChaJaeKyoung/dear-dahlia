@@ -299,11 +299,11 @@ header h1 a img {
 .dahlia-pick__contents > ul > li > a::before {
   font-size: 1.6rem;
   text-align: center;
-  line-height: 7.375rem;
+  line-height: 25%;
   color: #f5a299;
   display: block;
-  width: 7.125rem;
-  height: 7.375rem;
+  width: 25%;
+  height: 25%;
   background-color: rgba(255, 255, 255, 0.8);
   position: absolute;
   top: 0;
