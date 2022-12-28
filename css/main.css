@@ -318,7 +318,8 @@ header h1 a img {
 .dahlia-pick__contents > ul.contents__new-product li a::before {
   content: "NEW";
 }
-/* [x]TODO background-img로 교체 예정 img사이즈가 미세하게 다른것은 어떻게 해결?- 해결: 부모에게 너비높이 주고 img를 width height 100% , display: block */
+
+/* [x] background-img로 교체 예정 img사이즈가 미세하게 다른것은 어떻게 해결?- 해결: 부모에게 너비높이 주고 img를 width height 100% , display: block */
 .dahlia-pick__contents > ul {
   display: none;
 }
