@@ -19,6 +19,7 @@ html {
 h2 {
   font-size: 3rem;
   font-weight: 700;
+  color: #333;
 }
 a {
   text-decoration: none;
@@ -89,7 +90,7 @@ header h1 a img {
 .top-menu {
   display: flex;
   font-size: 1.8rem;
-  font-weight: 200;
+  font-weight: 100;
 }
 .top-menu .search {
 
@@ -433,7 +434,7 @@ header h1 a img {
   text-align: center;  
   display: block;
   font-size: 3rem;
-  font-weight: 200;
+  font-weight: 100;
   color: #a46868;
   padding: 10px;
   margin: 0 auto;
@@ -442,4 +443,27 @@ header h1 a img {
 .btn-promotion a:hover {
   background-color: #a46868;
   color: #fff;
+}
+
+/* 메이크업 가이드 */
+.makeup-guide {
+  
+}
+.guide__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.guide__text-wrap {
+  border: 1px solid orange;
+  background: #cecece;
+}
+.guide__text-wrap em {
+  font-size: 1.6rem;
+  font-weight: 300;
+  /* background: skyblue; */
+  /* line-height: 5rem; */
+}
+.guide__text-wrap h2 {
+  line-height: 8rem;
 }
