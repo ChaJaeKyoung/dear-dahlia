@@ -269,27 +269,28 @@
     <section class="makeup-guide">
       <div class="inner">
         <!--TODO 클래스명 BEM네이밍 wrapper처럼 의미가없는 것으로 끝날때도 wrapper__text-wrap 이렇게 해야될까요???? ==> 좀 더 직관적인 표현이 맞다 guide__text-wrap-->
-        <div class="guide__wrapper">
-          <div class="guide__text-wrap">            
+        <div class="makeup-guide__wrapper">
+          <div class="makeup-guide__text-wrap">            
             <em>메이크업 가이드</em>
             <h2>
               DEAR DAHLIA MAKEUP GUIDE
             </h2>
             <p>봄을 닮은 소녀의 수줍은 두 볼 처럼 발그래한<br>디어달리아 블루밍 에디션을 이용한<br>봄 꽃 메이크업 가이드</p>
-            <div class="btn-guide-more">
+            <div class="btn-makeup-guide-more">
               <a href="javascript:void(0)">
                 MORE VIEW
               </a>
             </div>
           </div>
-          <div class="guide__img-wrap">
-            <img class="img-left" src="./images/makeup-guide-img1.png" alt="메이크업이미지1">
-            <img class="img-right" src="./images/makeup-guide-img2.png" alt="메이크업이미지2">
+          <div class="makeup-guide__img-wrap">
+            <div class="makeup-guide__img-bg"></div>
+            <img class="makeup-guide__img1" src="./images/makeup-guide-img1.png" alt="메이크업이미지1">
+            <img class="makeup-guide__img2" src="./images/makeup-guide-img2.png" alt="메이크업이미지2">
           </div> 
         </div>
       </div> 
     </section>
-
+    <!-- TODO 22-12-28 꽃잎요소 배치 -->
     <section class="event-banner">
       <div class="inner">
         <div class="swiper">
@@ -306,7 +307,7 @@
               <img src="./images/event-banner-img2.png" alt="이벤트3">
             </div>
             <div class="swiper-slide">
-              <img src="./images/event-banner-img2.png" alt="이벤트4">
+              <img src="./images/event-banner-img1.png" alt="이벤트4">
             </div>
           </div>
           <!-- If we need pagination -->

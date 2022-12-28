@@ -318,7 +318,7 @@ header h1 a img {
 .dahlia-pick__contents > ul.contents__new-product li a::before {
   content: "NEW";
 }
-/* TODO background-img로 교체 예정 img사이즈가 미세하게 다른것은 어떻게 해결?- 해결: 부모에게 너비높이 주고 img를 width height 100% , display: block */
+/* [x]TODO background-img로 교체 예정 img사이즈가 미세하게 다른것은 어떻게 해결?- 해결: 부모에게 너비높이 주고 img를 width height 100% , display: block */
 .dahlia-pick__contents > ul {
   display: none;
 }
@@ -448,43 +448,86 @@ header h1 a img {
 
 /* 메이크업 가이드 */
 .makeup-guide {
+  width: 100%;
+  background-image: url(../images/Frame1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   
 }
-.guide__wrapper {
+.makeup-guide__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 180px 0 100px;
 }
-.guide__text-wrap {
+.makeup-guide__text-wrap {
   border: 1px solid orange;
-  background: #cecece;
+  /* background: #cecece; */
 }
-.guide__text-wrap em {
+.makeup-guide__text-wrap em {
   font-size: 1.6rem;
   font-weight: 300;
   /* background: skyblue; */
   /* line-height: 5rem; */
 }
-.guide__text-wrap h2 {
+.makeup-guide__text-wrap h2 {
   line-height: 8rem;
 }
-.guide__text-wrap p {
+.makeup-guide__text-wrap p {
   font-size: 1.8rem;
   font-weight: 100;
   line-height: 2.8rem;
 }
-.guide__img-wrap {
+.makeup-guide__img-wrap {
   border: 1px solid #000;
 }
-.btn-guide-more {
-
+.btn-makeup-guide-more {
+  margin-top: 28px;
 }
-.btn-guide-more a {
+.btn-makeup-guide-more a {
   display: block;
-  width: 100px;
+  width: 120px;
   height: 30px;
+  font-size: 1.8rem;
+  color: #333;
+  border: 1px solid #333;
+  text-align: center;
+  line-height: 2.6rem;
+  font-weight: 100;
+  padding: 2px 0;
 }
+.btn-makeup-guide-more a:hover {
+  color: #fff;
+  background-color: #333;
+}
+.makeup-guide__img-wrap {
+  position: relative;
+  
+}
+.makeup-guide__img-bg {
+  width: 712px;
+  height: 603px;
+  background-image: url(../images/makeup-guide-rectangle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.makeup-guide__img1 {
+  position: absolute;
+  left: -52px;
+  bottom: 140px;
+}
+.makeup-guide__img2 {
+  position: absolute;
+  right: 32px;
+  top: -40px;
+}
+
 /* event-banner */
 .event-banner {
   background: #dedede;
+}
+.swiper-wrapper {
+  
 }
