@@ -37,22 +37,22 @@ pickTabEls.forEach(function(pickTabEl, index) {
 
 //swiper
 // 이벤트베너 수직 슬라이드 기능
-new Swiper('.event-banner .swiper', {
-  // Optional parameters
-  direction: 'vertical', // 수평 슬라이드 (기본값) 빼도 적용
-  loop: true, // 반복 재생 여부
-  autoplay: {
-    delay: 5000 // 5초마다 슬라이드 바뀜
-  }, // 자동 재생 여부
-  slidesPerView: 2, // 한 번에 보여줄 수 있는 슬라이드 개수
-  spaceBetween: 10, // 슬라이드 사이 여백(간격) px
-  // centeredSlides: true, // 1번 슬라이드가 가운데 보이기
-  // pagination: {
-  //   el: '.event-banner .swiper-pagination', //페이지 번호 요소
-  //   clickable: true, // 사용자의 번호 제어 여부
-  // },
-  navigation: { // 이전/다음 슬라이드 버튼 사용
-    prevEl: '.event-banner .swiper-button-prev',
-    nextEl: '.event-banner .swiper-button-next',
-  },
-});
+// new Swiper('.event-banner .swiper', {
+//   // Optional parameters
+//   direction: 'vertical', // 수평 슬라이드 (기본값) 빼도 적용
+//   loop: true, // 반복 재생 여부
+//   autoplay: {
+//     delay: 5000 // 5초마다 슬라이드 바뀜
+//   }, // 자동 재생 여부
+//   slidesPerView: 2, // 한 번에 보여줄 수 있는 슬라이드 개수
+//   spaceBetween: 10, // 슬라이드 사이 여백(간격) px
+//   // centeredSlides: true, // 1번 슬라이드가 가운데 보이기
+//   // pagination: {
+//   //   el: '.event-banner .swiper-pagination', //페이지 번호 요소
+//   //   clickable: true, // 사용자의 번호 제어 여부
+//   // },
+//   navigation: { // 이전/다음 슬라이드 버튼 사용
+//     prevEl: '.event-banner .swiper-button-prev',
+//     nextEl: '.event-banner .swiper-button-next',
+//   },
+// });

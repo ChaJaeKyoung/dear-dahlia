@@ -17,7 +17,7 @@ html {
 } */
 
 h2 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: 700;
   color: #333;
 }
@@ -420,14 +420,14 @@ header h1 a img {
   color: #a46868;
   white-space: nowrap;
 }
-.btn-promotion  {
+.btn-promotion-more  {
   width: 100%;
   background-color: #fff;
   padding-top: 300px;
   position: relative;
   z-index: 1;
 }
-.btn-promotion a {
+.btn-promotion-more a {
   border: 1px solid #a46868;
   width:188px;
   height:55px;
@@ -440,7 +440,7 @@ header h1 a img {
   margin: 0 auto;
   
 }
-.btn-promotion a:hover {
+.btn-promotion-more a:hover {
   background-color: #a46868;
   color: #fff;
 }
@@ -454,16 +454,36 @@ header h1 a img {
   align-items: center;
   justify-content: space-between;
 }
-.guide__text-wrap {
+.wrapper__text-wrap {
   border: 1px solid orange;
   background: #cecece;
 }
-.guide__text-wrap em {
+.wrapper__text-wrap em {
   font-size: 1.6rem;
   font-weight: 300;
   /* background: skyblue; */
   /* line-height: 5rem; */
 }
-.guide__text-wrap h2 {
+.wrapper__text-wrap h2 {
   line-height: 8rem;
+}
+.wrapper__text-wrap p {
+  font-size: 1.8rem;
+  font-weight: 100;
+  line-height: 2.8rem;
+}
+.wrapper__img-wrap {
+  border: 1px solid #000;
+}
+.btn-guide-more {
+
+}
+.btn-guide-more a {
+  display: block;
+  width: 100px;
+  height: 30px;
+}
+/* event-banner */
+.event-banner {
+  background: #dedede;
 }
