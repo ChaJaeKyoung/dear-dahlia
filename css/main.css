@@ -531,3 +531,9 @@ header h1 a img {
 .swiper-wrapper {
   
 }
+
+/* footer */
+footer {
+  background: #2c2c2c;
+  padding: 52px 0;
+}
