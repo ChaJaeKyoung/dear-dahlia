@@ -36,11 +36,19 @@ header {
   /* 헤더 정도는 고정높이 줘도 괜찮다 ,,섹션은 자식 크기에 맞게 하기*/
   /* TODO 헤더 높이에 따른 로고 높이 변경 물어보기???? */
   height: 100px;
-  background-color: #dedede;
+  /* background-color: #dedede; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 40px;
+
+  /* 테블릿 */
+  /* position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: #fff;
+  z-index: 10; */
 }
 header h1 a img {
   width: 180px;
@@ -72,9 +80,10 @@ header h1 a img {
   position: absolute;
   border: 1px solid #000;
   top: 62px;
-  display: block;
   text-align: center;
   white-space: nowrap;
+  /* 호버처리 */
+  display: none;
 }
 .sub-menu > li {
   padding: 8px 12px ;
@@ -343,7 +352,10 @@ header h1 a img {
   object-fit: cover;
   /* 높이가 다른건 컨텐츠를 잘 맞춰야 함! => img크기를 잘 맞춰서 하던지,,아니면 사이즈 고정해놓고 미디어 쿼리로 조정을 하던지 하자 */
   /* img도 cover을 쓸 수 있다. object-fit: cover; */
+  /* transition: scale(1) auto easease-in .3s; */
+  
 }
+
 
 /* 유튜브 영역 */
 .new-eddition {
@@ -366,6 +378,8 @@ header h1 a img {
   margin: 0 auto;
 }
 #player {
+  width:860px;
+  height:484px;
 }
 /* 새 시즌 프로모션 상품 영역 */
 .new-eddition {
@@ -573,4 +587,9 @@ footer a {
   margin-left: 10px;
 }
 
+@media (min-width:360px) and (max-width: 1600px) {
+  #player {
+    width: 600px
+  }
+}
 

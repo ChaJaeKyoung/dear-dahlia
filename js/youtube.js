@@ -18,6 +18,8 @@ var tag = document.createElement('script');
             loop: true, // 반복 재생 유무 (아래 플레이리스트 옵션 필수 영상이 하나일 지라도 반복재생 하고 싶으면 playlist를 꼭 채워줘야한다.)
             playlist: ['b8Si68tcpCA','l4hQ7udfEuM'], // 반복 재생할 유튜브 영상 ID 목록
           },
+          modestbranding: 0,
+          rel: 0,
           // align: middle,
           events: {
             // 'onReady': onPlayerReady,
