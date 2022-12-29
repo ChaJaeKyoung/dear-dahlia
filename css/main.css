@@ -176,7 +176,7 @@ header h1 a img {
 .side-bar {
   width: 74px;
   /* height: 512px; */
-  background-color: darkcyan;
+  
   position: fixed;
   right:0;
   bottom: 100px;
@@ -534,7 +534,43 @@ header h1 a img {
 }
 
 /* footer */
+/* 제목은 제일 두껍게 내용은 제일 얇게 a테그는 중간두께  */
+/* TODO 사이드바가 푸터영역에 침범하지 않도록 up버튼이 생기면서 위로 올라가게 해야됨 */
 footer {
   background: #2c2c2c;
   padding: 52px 0;
+  color: #fff;
+  font-weight: 100;
+  font-size: 1.2rem;
 }
+footer a {
+  font-size: 1.2rem;
+  font-weight: 400;
+  /* color:#d19c9c; */
+  color:#daaeae;
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-wrapper em {
+  font-weight: 400;
+}
+.footer-wrapper ul li {
+  padding: 4px 0 ;
+}
+.footer__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+.footer__cs .cs__em {
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.company-info__em > a + a {
+  margin-left: 10px;
+}
+
+
