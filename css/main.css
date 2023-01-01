@@ -540,11 +540,9 @@ header h1 a img {
 }
 
 /* event-banner */
-.event-banner {
-  background: #dedede;
-}
-.swiper-wrapper {
-  
+.event-banner .swiper {
+  width: 1400px;
+  height: 211px;
 }
 
 /* footer */
@@ -587,6 +585,17 @@ footer a {
   margin-left: 10px;
 }
 
+/* totop */
+#to-top {
+  position: fixed;
+  right:10px;
+  bottom: 60px;
+  z-index: 10;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #000;
+  cursor: pointer;
+}
 @media (min-width:360px) and (max-width: 1600px) {
   #player {
     width: 600px

@@ -37,22 +37,47 @@ pickTabEls.forEach(function(pickTabEl, index) {
 
 // swiper
 // 이벤트베너 수직 슬라이드 기능
-new Swiper('.event-banner .swiper', {
+const eventSwiper = new Swiper('.event-banner .swiper', {
   // Optional parameters
   direction: 'horizontal', // 수평 슬라이드 (기본값) 빼도 적용
   loop: true, // 반복 재생 여부
   autoplay: {
-    delay: 5000 // 5초마다 슬라이드 바뀜
+    delay: 2000 // 5초마다 슬라이드 바뀜
   }, // 자동 재생 여부
   slidesPerView: 2, // 한 번에 보여줄 수 있는 슬라이드 개수
   spaceBetween: 10, // 슬라이드 사이 여백(간격) px
-  // centeredSlides: true, // 1번 슬라이드가 가운데 보이기
-  // pagination: {
-  //   el: '.event-banner .swiper-pagination', //페이지 번호 요소
-  //   clickable: true, // 사용자의 번호 제어 여부
-  // },
-  navigation: { // 이전/다음 슬라이드 버튼 사용
-    prevEl: '.event-banner .swiper-button-prev',
-    nextEl: '.event-banner .swiper-button-next',
+  centeredSlides: true, // 1번 슬라이드가 가운데 보이기
+  pagination: {
+    el: '.event-banner .swiper-pagination', //페이지 번호 요소
+    clickable: true, // 사용자의 번호 제어 여부
   },
+  // navigation: { // 이전/다음 슬라이드 버튼 사용
+  //   prevEl: '.event-banner .swiper-button-prev',
+  //   nextEl: '.event-banner .swiper-button-next',
+  // },
 });
+eventSwiper.changeDirection('vertical');
+
+//디어달리아 사이드바 숨기기
+// pc에서만 작동하도록
+window.addEventListener('scroll', function () {
+  if(window.scrollY > 3400) {
+    // console.log(window.scrollY);
+    document.querySelector('aside').style.display='none';
+  } else {
+    this.document.querySelector('aside').style.display='block';
+  }
+});
+
+// top button 만들기
+const toTopEl = document.querySelector('#to-top')
+window.addEventListener('scroll', function () {
+  if(window.scrollY >= 3400) {
+    toTopEl.style.display='block';
+  } else {
+    toTopEl.style.display='none';
+  }
+});
+toTopEl.addEventListener('click',function () {
+  window.scrollTo(0,0);
+})
