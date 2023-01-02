@@ -541,7 +541,7 @@ header h1 a img {
 
 /* event-banner */
 .event-banner .swiper {
-  width: 1400px;
+  width: 692px;
   height: 211px;
 }
 
@@ -589,7 +589,7 @@ footer a {
 #to-top {
   position: fixed;
   right:10px;
-  bottom: 60px;
+  bottom: 330px;
   z-index: 10;
   width: 60px;
   height: 60px;
