@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marquee</title>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    /* 움직이는 텍스트 */
+    :root {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size : 10px;
+    }
+    .marquee {
+      padding: 30px 10px;
+    }
+    .marquee__wrapper {
+      display: flex;
+      font-weight: 500;
+      font-size: 28px;
+      white-space: nowrap;
+    }
+    
+    .marquee__content {
+      
+    }
+    @media screen and (min-width:1024px) {
+	    /* Desktop */
+      
+    }
+    @media screen and (min-width:768px) and (max-width: 1023px) {
+	    /* Tablet */
+    }
+    @media screen and (max-width:767px){ 
+	    /* Mobile */
+    } 
+  </style>
+  <script src="./js/marquee.js"></script>
+</head>
+<body>
+  
+</body>
+</html>
+  <div class="marquee">
+    <div class="marquee__wrapper">
+      <!-- 화면 비율에 따라 글씨 크기가 달라지며 속도도 일정하게 만들어주고 싶음 -->
+      <!-- 글씨가 끊기지 않아야 함 -->
+      <div class="marquee__content">
+        dear-dahlia&nbsp;new&nbsp;season&nbsp;eddition&nbsp;dear-dahlia&nbsp;new&nbsp;season&nbsp;eddition&nbsp;dear-dahlia&nbsp;new&nbsp;season&nbsp;eddition&nbsp;dear-dahlia&nbsp;new&nbsp;season&nbsp;eddition
+      </div>
+    </div>
+  </div>
