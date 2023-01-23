@@ -596,9 +596,27 @@ footer a {
   border: 2px solid #000;
   cursor: pointer;
 }
-@media (min-width:360px) and (max-width: 1600px) {
+/* @media (min-width:360px) and (max-width: 1600px) {
   #player {
     width: 600px
   }
+} */
+
+@media screen and (min-width:1024px) {
+  /* Desktop */
+  
+  
 }
+@media screen and (min-width:768px) and (max-width: 1023px) {
+  /* Tablet */
+  :root {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width:767px){ 
+  /* Mobile */
+  :root {
+    font-size: 6px;
+  }
+} 
 

@@ -22,22 +22,45 @@
     .marquee__wrapper {
       display: flex;
       font-weight: 500;
-      font-size: 28px;
+      font-size: 2.8rem;
       white-space: nowrap;
+      overflow: hidden;
+      
     }
     
     .marquee__content {
-      
+      animation: textloop 10s linear infinite ;
+    }
+
+    .marquee__content .no-2 {
+      /* display: none; */
+    }
+    @keyframes textloop {
+      0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+      100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+      }
     }
     @media screen and (min-width:1024px) {
 	    /* Desktop */
       
+      
     }
     @media screen and (min-width:768px) and (max-width: 1023px) {
 	    /* Tablet */
+      :root {
+        font-size: 8px;
+      }
     }
     @media screen and (max-width:767px){ 
 	    /* Mobile */
+      :root {
+        font-size: 6px;
+      }
     } 
   </style>
   <script src="./js/marquee.js"></script>
@@ -50,7 +73,10 @@
     <div class="marquee__wrapper">
       <!-- 화면 비율에 따라 글씨 크기가 달라지며 속도도 일정하게 만들어주고 싶음 -->
       <!-- 글씨가 끊기지 않아야 함 -->
-      <div class="marquee__content">
+      <div class="marquee__content no-1">
+        dear-dahlia&nbsp;new&nbsp;season&nbsp;eddition&nbsp;dear-dahlia&nbsp;new&nbsp;season&nbsp;eddition&nbsp;dear-dahlia&nbsp;new&nbsp;season&nbsp;eddition&nbsp;dear-dahlia&nbsp;new&nbsp;season&nbsp;eddition
+      </div>
+      <div class="marquee__content no-2">
         dear-dahlia&nbsp;new&nbsp;season&nbsp;eddition&nbsp;dear-dahlia&nbsp;new&nbsp;season&nbsp;eddition&nbsp;dear-dahlia&nbsp;new&nbsp;season&nbsp;eddition&nbsp;dear-dahlia&nbsp;new&nbsp;season&nbsp;eddition
       </div>
     </div>

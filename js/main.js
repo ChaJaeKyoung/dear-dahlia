@@ -1,3 +1,7 @@
+// search
+const searchEl = document.querySelector('search')
+
+
 //버튼 test 
 const btnPrev = document.querySelector('.side-bar .btn__prev');
 btnPrev.addEventListener('click', function () {
@@ -81,3 +85,6 @@ window.addEventListener('scroll', function () {
 toTopEl.addEventListener('click',function () {
   window.scrollTo(0,0);
 })
+
+// marquee
+// setinterval로 x좌표를 바꿔준다
