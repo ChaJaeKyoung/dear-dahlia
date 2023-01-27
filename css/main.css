@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;  
 }
-html {
+:root {
   /* rem용 font */
   font-size: 10px;
   font-family: 'Noto Sans KR', sans-serif;
@@ -76,6 +76,10 @@ header h1 a img {
   letter-spacing: -0.01rem;
 }
 
+.main-menu:hover .sub-menu {
+  display: block;
+}
+
 .sub-menu {
   position: absolute;
   border: 1px solid #000;
@@ -85,6 +89,7 @@ header h1 a img {
   /* 호버처리 */
   display: none;
 }
+
 .sub-menu > li {
   padding: 8px 12px ;
 }
@@ -389,7 +394,7 @@ header h1 a img {
   width: 160px;
 }
 .new-eddition__promotion {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 .promotion__product {
   display: flex;
@@ -399,7 +404,7 @@ header h1 a img {
   position: relative;
   left:0;
   top:140px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .promotion__product li a {
   position: relative;
@@ -499,7 +504,7 @@ header h1 a img {
   padding: 180px 0 100px;
 }
 .makeup-guide__text-wrap {
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   /* background: #cecece; */
 }
 .makeup-guide__text-wrap em {
@@ -517,7 +522,7 @@ header h1 a img {
   line-height: 2.8rem;
 }
 .makeup-guide__img-wrap {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 .btn-makeup-guide-more {
   margin-top: 28px;
@@ -528,7 +533,7 @@ header h1 a img {
   height: 30px;
   font-size: 1.8rem;
   color: #333;
-  border: 1px solid #333;
+  /* border: 1px solid #333; */
   text-align: center;
   line-height: 2.6rem;
   font-weight: 100;
@@ -617,6 +622,21 @@ footer a {
   height: 60px;
   border: 2px solid #000;
   cursor: pointer;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border-radius: 20px;
+}
+#to-top .material-symbols-outlined {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+#to-top:hover {
+  background-color: #000;
+  color: #fff
 }
 /* @media (min-width:360px) and (max-width: 1600px) {
   #player {
